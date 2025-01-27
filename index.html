@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Piedra, Papel o Tijeras!</h1>
+        <details class="rules-container">
+            <summary>Reglas del juego</summary>
+            <p>Jugarás contra la computadora.</p>
+            <p>Puedes elegir entre Piedra, Papel y Tijeras.</p>
+            <p>El primero en llegar a tres puntos gana.</p>
+            <p>Aquí están las reglas para obtener un punto en el juego:</p>
+            <ul>
+                <li>Piedra vence a Tijeras</li>
+                <li>Tijeras vence a Papel</li>
+                <li>Papel vence a Piedra</li>
+            </ul>
+            <p>Si el jugador y la computadora eligen la misma opción (Ej. Papel y Papel), entonces nadie obtiene el punto.</p>
+        </details>
+        <div class="score-container">
+            <strong>Puntuación del Jugador: <br><span class="score" id="puntuacion-jugador">0</span></strong>
+            <strong>Puntuación de la Computadora: <br><span class="score" id="puntuacion-computadora">0</span></strong>
+        </div>
+        <section class="options-container">
+            <h2>Elige uno:</h2>
+            <br>
+            <div class="btn-container">
+                <button id="piedra-btn" class="btn">Piedra</button>
+                <button id="papel-btn" class="btn">Papel</button>
+                <button id="tijeras-btn" class="btn">Tijeras</button>
+            </div>
+        </section>
+        <div class="results-container">
+            <p id="mensaje-resultados"></p>
+            <br>
+            <p id="mensaje-ganador"></p>
+            <br>
+            <button class="btn" id="reiniciar-juego-btn">Otro o qué??</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
